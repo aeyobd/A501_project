@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -f LOGS1/*
+rm -f LOGS2/*

@@ -1,0 +1,72 @@
+    - inlist: inlist_start_header
+      runtime_minutes:   0.01
+      model_number:            1
+      star_age:     1.0000000000000001E-05
+      num_retries:            0
+      log_rel_run_E_err:       -12.4884978653532368
+      steps:          388
+      retries:            1
+      redos:            0
+      solver_calls_made:          389
+      solver_calls_failed:            1
+      solver_iterations:         1061
+    - inlist: inlist_to_end_core_h_burn_header
+      runtime_minutes:   1.46
+      model_number:          295
+      star_age:     9.2629214636676197E+09
+      num_retries:            0
+      log_rel_run_E_err:       -10.3054945256093173
+      steps:          294
+      retries:            0
+      redos:            0
+      solver_calls_made:          294
+      solver_calls_failed:            0
+      solver_iterations:         1982
+    - inlist: inlist_to_start_he_core_flash_header
+      runtime_minutes: 155.04
+      model_number:        10613
+      star_age:     1.2278991167198563E+10
+      num_retries:            0
+      log_rel_run_E_err:        -2.7792850027402061
+      steps:        10318
+      retries:            0
+      redos:            0
+      solver_calls_made:        10318
+      solver_calls_failed:            0
+      solver_iterations:        59129
+    - inlist: inlist_to_end_core_he_burn_header
+      runtime_minutes:  18.35
+      model_number:        12539
+      star_age:     1.2349548849053480E+10
+      num_retries:           48
+      log_rel_run_E_err:        -2.2118122810979486
+      steps:         1926
+      retries:           48
+      redos:            0
+      solver_calls_made:         1974
+      solver_calls_failed:           48
+      solver_iterations:         9055
+    - inlist: inlist_to_end_agb_header
+      runtime_minutes:   8.68
+      model_number:        12991
+      star_age:     1.2378667022945499E+10
+      num_retries:            2
+      log_rel_run_E_err:        -2.6523468649873205
+      steps:          452
+      retries:            2
+      redos:            0
+      solver_calls_made:          454
+      solver_calls_failed:            2
+      solver_iterations:         2664
+    - inlist: inlist_to_wd_header
+      runtime_minutes:   6.78
+      model_number:        13500
+      star_age:     1.2397436101878988E+10
+      num_retries:           30
+      log_rel_run_E_err:        -2.7824414083495674
+      steps:          509
+      retries:           30
+      redos:            0
+      solver_calls_made:          539
+      solver_calls_failed:           30
+      solver_iterations:         3083

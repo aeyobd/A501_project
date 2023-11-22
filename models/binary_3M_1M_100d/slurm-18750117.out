@@ -1,0 +1,357 @@
++ export OMP_NUM_THREADS=16
++ OMP_NUM_THREADS=16
++ source /home/dboyea/project/mesasdk//bin/mesasdk_init.sh
+++ [[ -z /home/dboyea/project/mesasdk/ ]]
+++ '[' '!' -f /home/dboyea/project/mesasdk//etc/check_arch.done ']'
+++ '[' '!' -f /home/dboyea/project/mesasdk//etc/regen_headers.done ']'
+++ export PATH=/home/dboyea/project/mesasdk//bin:/home/dboyea/.local/bin:/home/dboyea/bin:/home/dboyea/pyenv/bin:/home/dboyea/project/mesasdk//bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.10.2/bin:/opt/software/bin:/opt/software/slurm/bin:/home/dboyea/pyenv/bin:/home/dboyea/project/mesasdk/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Compiler/intel2020/openmpi/4.0.3/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/libfabric/1.10.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ucx/1.8.0/bin:/cvmfs/restricted.computecanada.ca/easybuild/software/2020/Core/intel/2020.1.217/compilers_and_libraries_2020.1.217/linux/bin/intel64:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/gcccore/9.3.0/bin:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/sbin:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/bin:/cvmfs/soft.computecanada.ca/gentoo/2020/sbin:/cvmfs/soft.computecanada.ca/gentoo/2020/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/home/dboyea/.local/share/kitty-ssh-kitten/kitty/bin:/usr/local/sbin:/usr/sbin
+++ PATH=/home/dboyea/project/mesasdk//bin:/home/dboyea/.local/bin:/home/dboyea/bin:/home/dboyea/pyenv/bin:/home/dboyea/project/mesasdk//bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.10.2/bin:/opt/software/bin:/opt/software/slurm/bin:/home/dboyea/pyenv/bin:/home/dboyea/project/mesasdk/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/mii/1.1.2/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Compiler/intel2020/openmpi/4.0.3/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/libfabric/1.10.1/bin:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ucx/1.8.0/bin:/cvmfs/restricted.computecanada.ca/easybuild/software/2020/Core/intel/2020.1.217/compilers_and_libraries_2020.1.217/linux/bin/intel64:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/gcccore/9.3.0/bin:/cvmfs/soft.computecanada.ca/easybuild/bin:/cvmfs/soft.computecanada.ca/custom/bin:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/sbin:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/bin:/cvmfs/soft.computecanada.ca/gentoo/2020/sbin:/cvmfs/soft.computecanada.ca/gentoo/2020/bin:/cvmfs/soft.computecanada.ca/custom/bin/computecanada:/opt/software/bin:/opt/software/slurm/bin:/usr/local/bin:/usr/bin:/opt/puppetlabs/bin:/opt/dell/srvadmin/bin:/home/dboyea/.local/share/kitty-ssh-kitten/kitty/bin:/usr/local/sbin:/usr/sbin
+++ export MANPATH=/home/dboyea/project/mesasdk//share/man:/home/dboyea/project/mesasdk//share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.10.2/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/libffi/3.3/share/man:/home/dboyea/project/mesasdk/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Compiler/intel2020/openmpi/4.0.3/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/libfabric/1.10.1/share/man:/cvmfs/restricted.computecanada.ca/easybuild/software/2020/Core/intel/2020.1.217/compilers_and_libraries_2020.1.217/linux/man/common:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/gcccore/9.3.0/share/man:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/share/gcc-data/x86_64-pc-linux-gnu/9.3.0/man:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/share/binutils-data/x86_64-pc-linux-gnu/2.33.1/man:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/share/man:/cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man
+++ MANPATH=/home/dboyea/project/mesasdk//share/man:/home/dboyea/project/mesasdk//share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/python/3.10.2/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/libffi/3.3/share/man:/home/dboyea/project/mesasdk/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Compiler/intel2020/openmpi/4.0.3/share/man:/cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/libfabric/1.10.1/share/man:/cvmfs/restricted.computecanada.ca/easybuild/software/2020/Core/intel/2020.1.217/compilers_and_libraries_2020.1.217/linux/man/common:/cvmfs/soft.computecanada.ca/easybuild/software/2020/Core/gcccore/9.3.0/share/man:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/share/gcc-data/x86_64-pc-linux-gnu/9.3.0/man:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/share/binutils-data/x86_64-pc-linux-gnu/2.33.1/man:/cvmfs/soft.computecanada.ca/gentoo/2020/usr/share/man:/cvmfs/soft.computecanada.ca/custom/software/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man
+++ export PGPLOT_DIR=/home/dboyea/project/mesasdk//lib/pgplot
+++ PGPLOT_DIR=/home/dboyea/project/mesasdk//lib/pgplot
+++ '[' '!' -f /home/dboyea/project/mesasdk//etc/check_preq.done ']'
+++ export VALGRIND_LIB=/home/dboyea/project/mesasdk//lib/valgrind
+++ VALGRIND_LIB=/home/dboyea/project/mesasdk//lib/valgrind
++++ /home/dboyea/project/mesasdk//bin/mesasdk_version
+++ export MESASDK_VERSION=x86_64-linux-23.7.3
+++ MESASDK_VERSION=x86_64-linux-23.7.3
++ ./clear_output
++ ./rn
+DATE: 2023-11-18
+TIME: 15:45:45
+./rn: line 5: ./clear_logs: No such file or directory
+
+
+ reading user weak rate file /home/dboyea/project/mesa/mesa-r23.05.1//data/rates_data/rate_tables/S13_r_be7_wk_li7.h5
+ version_number r23.05.1
+ change to "sagb_NeNa_MgAl.net"
+ number of species          29
+                             set_initial_number_retries           0
+                                         s% initial_z =    1.0000000000000000D-02
+ net name sagb_NeNa_MgAl.net
+ kap_option gs98
+ kap_CO_option gs98_co
+ kap_lowT_option lowT_fa05_gs98
+                                        OMP_NUM_THREADS          16
+
+
+
+
+write /home/dboyea/project/mesa/mesa-r23.05.1//data/kap_data/cache/lowT_fa05_gs98_z0.03_x0.8.bin
+ change to "sagb_NeNa_MgAl.net"
+ number of species          29
+                             set_initial_number_retries           0
+                                         s% initial_z =    1.0000000000000000D-02
+ net name sagb_NeNa_MgAl.net
+ kap_option gs98
+ kap_CO_option gs98_co
+ kap_lowT_option lowT_fa05_gs98
+                                        OMP_NUM_THREADS          16
+
+
+
+
+
+                                                     m2    1.0000000000000000D+00
+                                                     m1    3.0000000000000000D+00
+                                 initial_period_in_days    1.0000000000000000D+02
+                             initial_separation_in_Rsun    1.4392109496578007D+02
+                                        jdot_multiplier    1.0000000000000000D+00
+                                                     fr    1.0000000000000001D-01
+
+
+
+ The binary terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'M1+M2' is the total mass of the system (Msun),
+      'M1' is the mass of the primary (Msun)
+      'M2' is the mass of the secondary (Msun)
+      'separ' is the semi-major axis of the orbit (Rsun),
+      'R1' is the radius of the primary (Rsun)
+      'R2' is the radius of the secondary (Rsun)
+      'Porb' is the orbital period (days),
+      'P1' is the rotation period of star 1 (days, zero if not modeling rotation),
+      'P2' is the rotation period of star 2 (days, zero if not modeling rotation),
+      'e' orbital eccentricity,
+      'dot_e' time derivative of e (1/yr),
+      'Eorb' orbital energy G*M1*M2/2*separation (ergs),
+      'M2/M1' mass ratio,
+      'vorb1' orbital velocity of star 1 (km/s),
+      'vorb2' orbital velocity of star 2 (km/s),
+      'pm_i' index of star evolved as point mass, zero if both stars are modeled,
+      'RL1' Roche lobe radius of star 1 (Rsun),
+      'Rl2' Roche lobe radius of star 2 (Rsun),
+      'donor_i' index of star taken as donor,
+      'RL_gap1' (R1-Rl1)/Rl1,
+      'RL_gap2' (R2-Rl2)/Rl2,
+      'dot_Mmt', mass transfer rate (Msun/yr),
+      'dot_M1', time derivative for the mass of star 1 (Msun/yr),
+      'dot_M2', time derivative for the mass of star 2 (Msun/yr),
+      'eff', mass transfer efficiency, computed as -dot_M2/dot_M1 (zero if dot_M1=0),
+      'dot_Medd', Eddington accretion rate (Msun/yr),
+      'L_acc', accretion luminosity when accreting to a point mass (ergs/s),
+      'Jorb', orbital angular momentum (g*cm^2/s)
+      'spin1', spin angular momentum of star 1 (g*cm^2/s),
+      'spin2', spin angular momentum of star 2 (g*cm^2/s),
+      'dot_J', time derivative of Jorb (g*cm^2/s^2),
+      'dot_Jgr', time derivative of Jorb due to gravitational waves (g*cm^2/s^2),
+      'dot_Jml', time derivative of Jorb due to mass loss (g*cm^2/s^2),
+      'dot_Jmb', time derivative of Jorb due to magnetic braking (g*cm^2/s^2),
+      'dot_Jls', time derivative of Jorb due to spin-orbit coupling (g*cm^2/s^2),
+      'rlo_iters', number of iterations for implicit calculation of mass transfer,
+
+ All this and more can be saved in binary_history.data during the run.
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tmax     Teff     lg_LH      lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf   eta_cntr   zones  retry
+  lg_dt_yrs    lg_Tcntr    lg_R     lg_L3a     lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf   gam_cntr   iters  
+    age_yrs    lg_Dcntr    lg_L     lg_LZ      lg_Lphoto   lg_Dsurf   CO_core    C_cntr     Ne_cntr    Z_cntr   v_div_cs       dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tmax     Teff     lg_LH      lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf   eta_cntr   zones  retry
+  lg_dt_yrs    lg_Tcntr    lg_R     lg_L3a     lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf   gam_cntr   iters  
+    age_yrs    lg_Dcntr    lg_L     lg_LZ      lg_Lphoto   lg_Dsurf   CO_core    C_cntr     Ne_cntr    Z_cntr   v_div_cs       dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+  1       1   7.373938  1.356E+04   1.625192   1.626290   3.000000   3.000000   0.706400   0.002489   0.282884  -3.306976   2493      0
+ 3.8072E+00   7.373938   0.309849 -35.960097   0.387874 -10.911188   0.000000   0.283390   0.004629   0.009954   0.038027      4
+ 6.4150E+03   1.595842   2.103641  -0.971668  -9.283850  -9.096026   0.000000   0.000014   0.000969   0.010209  0.000E+00    initial dt
+
+  2       1   7.130597   5734.617  -0.259263  -0.259263   1.000000   1.000000   0.706671   0.000764   0.282858  -1.774869   3832      0
+ 3.8072E+00   7.130597  -0.046921 -47.206865  -1.792975 -99.000000   0.000000   0.283296   0.004675   0.009996   0.082665      5
+ 6.4150E+03   1.878353  -0.105130  -6.741171 -20.508846  -6.655762   0.000000   0.001479   0.000976   0.010033  0.000E+00   b_companion
+
+bin       1   4.000000  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -3.523E+33  0.000E+00
+   3.807197   3.000000   2.041030   0.000000  0.000E+00  18.203403  68.515814 -9.702E-01 -1.227E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 6.4150E+03   1.000000   0.897593   0.000000 -3.953E+46  54.610209  41.590484 -9.784E-01  0.000E+00  0.000E+00  0.000E+00 -3.523E+33          1
+
+save LOGS1/profile1.data for model 1
+save LOGS2/profile1.data for model 1
+  1       2   7.375578  1.355E+04   1.628230   1.629404   3.000000   3.000000   0.706394   0.002489   0.282884  -3.294728   1568      0
+ 3.8864E+00   7.375578   0.305492 -35.877471   0.441752 -10.762601   0.000000   0.283398   0.004628   0.009954   0.038107      3
+ 1.4113E+04   1.603517   2.092891  -0.939546  -8.828683  -9.091991   0.000000   0.000017   0.000969   0.010208  0.000E+00  max increase
+
+  2       2   7.130622   5741.897  -0.258595  -0.258595   1.000000   1.000000   0.706671   0.000764   0.282858  -1.774002   1934      0
+ 3.8864E+00   7.130622  -0.045448 -47.207042  -1.792666 -99.000000   0.000000   0.283296   0.004675   0.009996   0.082685      3
+ 1.4113E+04   1.878747  -0.099981  -6.741319 -20.399198  -6.660534   0.000000   0.001479   0.000976   0.010033  0.000E+00  max increase
+
+bin       2   4.000000  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -4.960E+33  0.000E+00
+   3.886378   3.000000   2.020654   0.000000  0.000E+00  18.203403  68.515816 -9.705E-01 -1.727E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 1.4113E+04   1.000000   0.900641   0.000000 -3.953E+46  54.610206  41.590486 -9.783E-01  0.000E+00  0.000E+00  0.000E+00 -4.960E+33          1
+
+  1       3   7.377496  1.355E+04   1.660410   1.661597   3.000000   3.000000   0.706385   0.002490   0.282884  -3.281816   1140      0
+ 3.9656E+00   7.377496   0.301445 -35.780766   0.485939 -10.777708   0.000000   0.283407   0.004628   0.009953   0.038184      3
+ 2.3351E+04   1.611893   2.084900  -0.902427  -8.522942  -9.087345   0.000000   0.000018   0.000969   0.010208  0.000E+00  max increase
+
+  2       3   7.130632   5751.700  -0.258128  -0.258128   1.000000   1.000000   0.706671   0.000764   0.282858  -1.772962   1245      0
+ 3.9656E+00   7.130632  -0.043781 -47.207014  -1.792303 -99.000000   0.000000   0.283296   0.004675   0.009996   0.082711      3
+ 2.3351E+04   1.879190  -0.093684  -6.741440 -20.171604  -6.666625   0.000000   0.001479   0.000976   0.010033  0.000E+00  max increase
+
+bin       3   4.000000  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -4.790E+33  0.000E+00
+   3.965559   3.000000   2.001911   0.000000  0.000E+00  18.203403  68.515818 -9.708E-01 -1.668E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 2.3351E+04   1.000000   0.904105   0.000000 -3.953E+46  54.610203  41.590488 -9.783E-01  0.000E+00  0.000E+00  0.000E+00 -4.790E+33          1
+
+  1       4   7.379745  1.357E+04   1.699029   1.700226   2.999999   2.999999   0.706373   0.002491   0.282882  -3.268759    989      0
+ 4.0447E+00   7.379745   0.297637 -35.668444   0.531058 -10.789746   0.000000   0.283419   0.004627   0.009949   0.038249      3
+ 3.4436E+04   1.620829   2.080118  -0.859910  -8.261108  -9.081744   0.000000   0.000018   0.000969   0.010207  0.000E+00  max increase
+
+  2       4   7.130632   5762.567  -0.257535  -0.257535   1.000000   1.000000   0.706670   0.000764   0.282858  -1.771745    924      0
+ 4.0447E+00   7.130632  -0.041895 -47.206273  -1.791824 -99.000000   0.000000   0.283297   0.004675   0.009996   0.082743      3
+ 3.4436E+04   1.879690  -0.086632  -6.741219 -19.993103  -6.673484   0.000000   0.001479   0.000976   0.010033  0.000E+00  max increase
+
+bin       4   3.999999  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -4.659E+33  0.000E+00
+   4.044741   2.999999   1.984435   0.000000  0.000E+00  18.203403  68.515820 -9.710E-01 -1.623E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 3.4436E+04   1.000000   0.908040   0.000000 -3.953E+46  54.610200  41.590491 -9.782E-01  0.000E+00  0.000E+00  0.000E+00 -4.659E+33          1
+
+  1       5   7.382350  1.361E+04   1.742771   1.743979   2.999999   2.999999   0.706359   0.002491   0.282881  -3.256172    974      0
+ 4.1239E+00   7.382350   0.293925 -35.540152   0.579445 -10.798337   0.000000   0.283434   0.004626   0.009944   0.038292      3
+ 4.7738E+04   1.630101   2.077795  -0.812165  -8.020959  -9.075237   0.000000   0.000018   0.000969   0.010207  0.000E+00  max increase
+
+  2       5   7.130639   5774.526  -0.256750  -0.256750   1.000000   1.000000   0.706670   0.000764   0.282858  -1.770335    806      0
+ 4.1239E+00   7.130639  -0.039768 -47.204905  -1.791184 -99.000000   0.000000   0.283297   0.004675   0.009996   0.082779      3
+ 4.7738E+04   1.880280  -0.078776  -6.740590 -19.840385  -6.681166   0.000000   0.001478   0.000976   0.010033  0.000E+00  max increase
+
+bin       5   3.999999  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -4.568E+33  0.000E+00
+   4.123922   2.999999   1.967548   0.000000  0.000E+00  18.203403  68.515823 -9.713E-01 -1.591E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 4.7738E+04   1.000000   0.912499   0.000000 -3.953E+46  54.610196  41.590494 -9.781E-01  0.000E+00  0.000E+00  0.000E+00 -4.568E+33          1
+
+  1       6   7.385294  1.366E+04   1.791963   1.793180   2.999999   2.999999   0.706340   0.002492   0.282880  -3.245030    970      0
+ 4.2031E+00   7.385294   0.290178 -35.397261   0.632580 -10.804371   0.000000   0.283452   0.004624   0.009940   0.038302      3
+ 6.3700E+04   1.639273   2.077169  -0.760162  -7.791555  -9.067897   0.000000   0.000018   0.000969   0.010207  0.000E+00  max increase
+
+  2       6   7.130639   5787.621  -0.255858  -0.255858   1.000000   1.000000   0.706669   0.000764   0.282858  -1.768671    806      0
+ 4.2031E+00   7.130639  -0.037381 -47.203725  -1.790451 -99.000000   0.000000   0.283298   0.004675   0.009996   0.082823      3
+ 6.3700E+04   1.880964  -0.070068  -6.740082 -19.707944  -6.689730   0.000000   0.001478   0.000976   0.010033  0.000E+00  max increase
+
+bin       6   3.999999  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -4.505E+33  0.000E+00
+   4.203103   2.999999   1.950646   0.000000  0.000E+00  18.203403  68.515826 -9.715E-01 -1.569E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 6.3700E+04   1.000000   0.917527   0.000000 -3.953E+46  54.610192  41.590497 -9.779E-01  0.000E+00  0.000E+00  0.000E+00 -4.505E+33          1
+
+  1       7   7.388486  1.372E+04   1.845696   1.846914   2.999999   2.999999   0.706318   0.002492   0.282879  -3.236637    974      0
+ 4.2823E+00   7.388486   0.286253 -35.244917   0.689222 -10.808744   0.000000   0.283475   0.004622   0.009937   0.038267      3
+ 8.2856E+04   1.647652   2.077183  -0.705982  -7.576717  -9.059914   0.000000   0.000018   0.000969   0.010207  0.000E+00  max increase
+
+  2       7   7.130646   5801.825  -0.254773  -0.254773   1.000000   1.000000   0.706668   0.000764   0.282858  -1.766712    806      0
+ 4.2823E+00   7.130646  -0.034731 -47.201928  -1.789532 -99.000000   0.000000   0.283299   0.004675   0.009996   0.082874      3
+ 8.2856E+04   1.881781  -0.060510  -6.739244 -19.584353  -6.699188   0.000000   0.001477   0.000976   0.010033  0.000E+00  max increase
+
+bin       7   3.999999  1.439E+02  1.000E+02  0.000E+00   0.333333          0          1  0.000E+00  0.000E+00  1.087E+53 -4.460E+33  0.000E+00
+   4.282284   2.999999   1.933094   0.000000  0.000E+00  18.203403  68.515830 -9.718E-01 -1.553E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 8.2856E+04   1.000000   0.923143   0.000000 -3.953E+46  54.610186  41.590502 -9.778E-01  0.000E+00  0.000E+00  0.000E+00 -4.460E+33          1
+
+  1       8   7.391733  1.379E+04   1.899808   1.901020   2.999998   2.999998   0.706291   0.002492   0.282878  -3.232238    973      0
+ 4.3615E+00   7.391733   0.282001 -35.092727   0.745453 -10.812655   0.000000   0.283502   0.004620   0.009934   0.038181      3
+ 1.0584E+05   1.654417   2.076358  -0.653852  -7.375670  -9.051652   0.000000   0.000019   0.000969   0.010207  0.000E+00  max increase
+
+  2       8   7.130665   5817.033  -0.253445  -0.253445   1.000000   1.000000   0.706667   0.000764   0.282858  -1.764409    806      0
+ 4.3615E+00   7.130665  -0.031829 -47.199269  -1.788375 -99.000000   0.000000   0.283300   0.004675   0.009996   0.082932      3
+ 1.0584E+05   1.882756  -0.050158  -6.737938 -19.466632  -6.709499   0.000000   0.001476   0.000976   0.010033  0.000E+00  max increase
+
+bin       8   3.999998  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -4.420E+33  0.000E+00
+   4.361466   2.999998   1.914260   0.000000  0.000E+00  18.203403  68.515835 -9.721E-01 -1.539E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 1.0584E+05   1.000000   0.929332   0.000000 -3.953E+46  54.610180  41.590507 -9.777E-01  0.000E+00  0.000E+00  0.000E+00 -4.420E+33          1
+
+  1       9   7.394741  1.383E+04   1.949198   1.950395   2.999998   2.999998   0.706262   0.002492   0.282878  -3.232663    976      0
+ 4.4406E+00   7.394741   0.277332 -34.954674   0.795811 -10.817732   0.000000   0.283530   0.004618   0.009932   0.038045      3
+ 1.3343E+05   1.658768   2.072953  -0.609699  -7.192423  -9.043698   0.000000   0.000019   0.000969   0.010208  0.000E+00  max increase
+
+  2       9   7.130700   5833.063  -0.251807  -0.251806   1.000000   1.000000   0.706666   0.000764   0.282858  -1.761712    806      0
+ 4.4406E+00   7.130700  -0.028706 -47.195429  -1.786917 -99.000000   0.000000   0.283301   0.004675   0.009996   0.082999      3
+ 1.3343E+05   1.883917  -0.039132  -6.735984 -19.352704  -6.720557   0.000000   0.001475   0.000976   0.010033  0.000E+00  max increase
+
+bin       9   3.999998  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -4.368E+33  0.000E+00
+   4.440647   2.999998   1.893791   0.000000  0.000E+00  18.203403  68.515840 -9.724E-01 -1.521E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 1.3343E+05   1.000000   0.936039   0.000000 -3.953E+46  54.610172  41.590513 -9.775E-01  0.000E+00  0.000E+00  0.000E+00 -4.368E+33          1
+
+
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tmax     Teff     lg_LH      lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf   eta_cntr   zones  retry
+  lg_dt_yrs    lg_Tcntr    lg_R     lg_L3a     lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf   gam_cntr   iters  
+    age_yrs    lg_Dcntr    lg_L     lg_LZ      lg_Lphoto   lg_Dsurf   CO_core    C_cntr     Ne_cntr    Z_cntr   v_div_cs       dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+  1      10   7.397195  1.385E+04   1.988495   1.989667   2.999997   2.999997   0.706230   0.002492   0.282877  -3.237816    979      0
+ 4.5198E+00   7.397195   0.272314 -34.845145   0.834994 -10.825806   0.000000   0.283562   0.004614   0.009931   0.037874      3
+ 1.6653E+05   1.660265   2.065571  -0.579581  -7.032965  -9.036786   0.000000   0.000019   0.000969   0.010208  0.000E+00  max increase
+
+
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tmax     Teff     lg_LH      lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf   eta_cntr   zones  retry
+  lg_dt_yrs    lg_Tcntr    lg_R     lg_L3a     lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf   gam_cntr   iters  
+    age_yrs    lg_Dcntr    lg_L     lg_LZ      lg_Lphoto   lg_Dsurf   CO_core    C_cntr     Ne_cntr    Z_cntr   v_div_cs       dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+  2      10   7.130758   5849.608  -0.249686  -0.249686   1.000000   1.000000   0.706664   0.000765   0.282858  -1.758562    806      0
+ 4.5198E+00   7.130758  -0.025425 -47.189994  -1.785073 -99.000000   0.000000   0.283302   0.004675   0.009996   0.083076      3
+ 1.6653E+05   1.885299  -0.027649  -6.733143 -19.244584  -6.732157   0.000000   0.001474   0.000976   0.010033  0.000E+00  max increase
+
+
+__________________________________________________________________________________________________________________________________________________
+
+binary_step      M1+M2      separ       Porb          e      M2/M1       pm_i    donor_i    dot_Mmt        eff       Jorb      dot_J    dot_Jmb
+      lg_dt         M1         R1         P1      dot_e      vorb1        RL1    Rl_gap1     dot_M1   dot_Medd      spin1    dot_Jgr    dot_Jls
+     age_yr         M2         R2         P2       Eorb      vorb2        RL2    Rl_gap2     dot_M2      L_acc      spin2    dot_Jml  rlo_iters
+__________________________________________________________________________________________________________________________________________________
+
+bin      10   3.999997  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -4.288E+33  0.000E+00
+   4.519828   2.999997   1.872036   0.000000  0.000E+00  18.203403  68.515846 -9.727E-01 -1.493E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 1.6653E+05   1.000000   0.943137   0.000000 -3.953E+46  54.610163  41.590519 -9.773E-01  0.000E+00  0.000E+00  0.000E+00 -4.288E+33          1
+
+  1      11   7.398824  1.384E+04   2.015353   2.016485   2.999997   2.999997   0.706202   0.002491   0.282877  -3.246712    990      0
+ 4.5990E+00   7.398824   0.267271 -34.775992   0.860149 -10.838206   0.000000   0.283590   0.004611   0.009930   0.037694      4
+ 2.0625E+05   1.658915   2.053849  -0.568047  -6.904707  -9.031715   0.000000   0.000020   0.000969   0.010208  0.000E+00  max increase
+
+  2      11   7.130848   5866.272  -0.247050  -0.247050   1.000000   1.000000   0.706662   0.000765   0.282858  -1.754903    806      0
+ 4.5990E+00   7.130848  -0.022082 -47.182407  -1.782750 -99.000000   0.000000   0.283304   0.004675   0.009996   0.083164      3
+ 2.0625E+05   1.886938  -0.016022  -6.729096 -19.136549  -6.744000   0.000000   0.001473   0.000976   0.010033  0.000E+00  max increase
+
+bin      11   3.999997  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -4.167E+33  0.000E+00
+   4.599009   2.999997   1.850421   0.000000  0.000E+00  18.203403  68.515854 -9.730E-01 -1.451E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 2.0625E+05   1.000000   0.950425   0.000000 -3.953E+46  54.610153  41.590528 -9.771E-01  0.000E+00  0.000E+00  0.000E+00 -4.167E+33          1
+
+  1      12   7.399586  1.380E+04   2.027179   2.028262   2.999996   2.999996   0.706174   0.002490   0.282877  -3.256959    988      0
+ 4.6782E+00   7.399586   0.262729 -34.747590   0.869350 -10.854972   0.000000   0.283618   0.004607   0.009930   0.037535      5
+ 2.5391E+05   1.655680   2.039319  -0.575149  -6.807829  -9.028881   0.000000   0.000020   0.000969   0.010208  0.000E+00  max increase
+
+  2      12   7.130983   5882.507  -0.243762  -0.243762   1.000000   1.000000   0.706660   0.000765   0.282858  -1.750675    805      0
+ 4.6782E+00   7.130983  -0.018807 -47.171994  -1.779829 -99.000000   0.000000   0.283306   0.004675   0.009996   0.083262      3
+ 2.5391E+05   1.888877  -0.004671  -6.723452 -19.027589  -6.755665   0.000000   0.001471   0.000976   0.010034  0.000E+00  max increase
+
+bin      12   3.999996  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -4.009E+33  0.000E+00
+   4.678191   2.999996   1.831171   0.000000  0.000E+00  18.203403  68.515862 -9.733E-01 -1.396E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 2.5391E+05   1.000000   0.957619   0.000000 -3.953E+46  54.610141  41.590537 -9.770E-01  0.000E+00  0.000E+00  0.000E+00 -4.009E+33          1
+
+  1      13   7.399764  1.374E+04   2.024556   2.025593   2.999995   2.999995   0.706125   0.002491   0.282877  -3.265077    987      0
+ 4.7574E+00   7.399764   0.259200 -34.744530   0.865166 -10.874043   0.000000   0.283667   0.004602   0.009930   0.037429      5
+ 3.1111E+05   1.652482   2.025414  -0.596722  -6.727496  -9.027826   0.000000   0.000020   0.000969   0.010208  0.000E+00  max increase
+
+  2      13   7.131174   5897.823  -0.239654  -0.239654   1.000000   1.000000   0.706657   0.000765   0.282858  -1.745816    805      0
+ 4.7574E+00   7.131174  -0.015760 -47.157945  -1.776175 -99.000000   0.000000   0.283309   0.004675   0.009996   0.083371      3
+ 3.1111E+05   1.891162   0.005941  -6.715747 -18.916670  -6.766706   0.000000   0.001468   0.000976   0.010034  0.000E+00  max increase
+
+bin      13   3.999995  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -3.837E+33  0.000E+00
+   4.757372   2.999995   1.816353   0.000000  0.000E+00  18.203403  68.515872 -9.735E-01 -1.336E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 3.1111E+05   1.000000   0.964363   0.000000 -3.953E+46  54.610127  41.590548 -9.768E-01  0.000E+00  0.000E+00  0.000E+00 -3.837E+33          1
+
+  1      14   7.399728  1.370E+04   2.016120   2.017104   2.999995   2.999995   0.706049   0.002493   0.282877  -3.269485    988      0
+ 4.8366E+00   7.399728   0.256939 -34.748738   0.856299 -10.891476   0.000000   0.283742   0.004595   0.009930   0.037379      5
+ 3.7974E+05   1.650559   2.015279  -0.628083  -6.650567  -9.027689   0.000000   0.000020   0.000969   0.010209  0.000E+00  max increase
+
+  2      14   7.131441   5911.709  -0.234360  -0.234360   1.000000   1.000000   0.706654   0.000765   0.282858  -1.740280    805      0
+ 4.8366E+00   7.131441  -0.013088 -47.139302  -1.771620 -99.000000   0.000000   0.283312   0.004675   0.009996   0.083492      3
+ 3.7974E+05   1.893836   0.015369  -6.705424 -18.806222  -6.776672   0.000000   0.001465   0.000976   0.010034  0.000E+00  max increase
+
+bin      14   3.999995  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -3.686E+33  0.000E+00
+   4.836553   2.999995   1.806921   0.000000  0.000E+00  18.203403  68.515884 -9.736E-01 -1.284E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 3.7974E+05   1.000000   0.970312   0.000000 -3.953E+46  54.610111  41.590560 -9.767E-01  0.000E+00  0.000E+00  0.000E+00 -3.686E+33          1
+
+  1      15   7.399682  1.367E+04   2.009821   2.010734   2.999994   2.999994   0.705946   0.002496   0.282877  -3.271180    988      0
+ 4.9157E+00   7.399682   0.255813 -34.751541   0.850017 -10.903872   0.000000   0.283845   0.004586   0.009930   0.037363      5
+ 4.6211E+05   1.649788   2.009727  -0.666860  -6.575069  -9.027844   0.000000   0.000019   0.000969   0.010209  0.000E+00  max increase
+
+  2      15   7.131802   5923.895  -0.227813  -0.227813   1.000000   1.000000   0.706650   0.000766   0.282858  -1.734035    805      0
+ 4.9157E+00   7.131802  -0.010904 -47.114911  -1.766001 -99.000000   0.000000   0.283316   0.004675   0.009996   0.083621      3
+ 4.6211E+05   1.896943   0.023315  -6.691812 -18.690792  -6.785270   0.000000   0.001461   0.000976   0.010034  0.000E+00  max increase
+
+bin      15   3.999994  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -3.582E+33  0.000E+00
+   4.915734   2.999994   1.802242   0.000000  0.000E+00  18.203403  68.515897 -9.737E-01 -1.248E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 4.6211E+05   1.000000   0.975205   0.000000 -3.953E+46  54.610092  41.590574 -9.766E-01  0.000E+00  0.000E+00  0.000E+00 -3.582E+33          1
+
+  1      16   7.399671  1.366E+04   2.007200   2.008027   2.999992   2.999992   0.705820   0.002500   0.282877  -3.271835    987      0
+ 4.9949E+00   7.399671   0.255414 -34.751919   0.847057 -10.910550   0.000000   0.283971   0.004575   0.009930   0.037359      5
+ 5.6094E+05   1.649523   2.007488  -0.712255  -6.504574  -9.028019   0.000000   0.000019   0.000969   0.010209  0.000E+00  max increase
+
+  2      16   7.132282   5934.364  -0.219741  -0.219741   1.000000   1.000000   0.706645   0.000766   0.282858  -1.727072    805      0
+ 4.9949E+00   7.132282  -0.009253 -47.083501  -1.759129 -99.000000   0.000000   0.283320   0.004675   0.009996   0.083759      3
+ 5.6094E+05   1.900522   0.029684  -6.674177 -18.569177  -6.792409   0.000000   0.001457   0.000976   0.010035  0.000E+00  max increase
+
+bin      16   3.999992  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -3.528E+33  0.000E+00
+   4.994916   2.999992   1.800588   0.000000  0.000E+00  18.203403  68.515912 -9.737E-01 -1.229E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 5.6094E+05   1.000000   0.978919   0.000000 -3.953E+46  54.610070  41.590592 -9.765E-01  0.000E+00  0.000E+00  0.000E+00 -3.528E+33          1
+
+  1      17   7.399712  1.366E+04   2.006285   2.007019   2.999991   2.999991   0.705667   0.002505   0.282877  -3.272214    986      0
+ 5.0741E+00   7.399712   0.255320 -34.749584   0.845822 -10.913188   0.000000   0.284124   0.004562   0.009930   0.037356      5
+ 6.7954E+05   1.649462   2.006908  -0.764968  -6.439364  -9.028083   0.000000   0.000019   0.000969   0.010209  0.000E+00  max increase
+
+  2      17   7.132906   5943.423  -0.209831  -0.209831   1.000000   1.000000   0.706638   0.000767   0.282858  -1.719418    804      0
+ 5.0741E+00   7.132906  -0.008103 -47.043582  -1.750804 -99.000000   0.000000   0.283326   0.004675   0.009996   0.083901      3
+ 6.7954E+05   1.904602   0.034634  -6.651666 -18.439970  -6.798262   0.000000   0.001450   0.000976   0.010035  0.000E+00  max increase
+
+bin      17   3.999991  1.439E+02  1.000E+02  0.000E+00   0.333334          0          1  0.000E+00  0.000E+00  1.087E+53 -3.506E+33  0.000E+00
+   5.074097   2.999991   1.800199   0.000000  0.000E+00  18.203403  68.515931 -9.737E-01 -1.221E-11  1.000E+99  0.000E+00 -8.019E+28  0.000E+00
+ 6.7954E+05   1.000000   0.981515   0.000000 -3.953E+46  54.610043  41.590612 -9.764E-01  0.000E+00  0.000E+00  0.000E+00 -3.506E+33          1
+
+  1      18   7.399781  1.366E+04   2.006179   2.006818   2.999989   2.999989   0.705486   0.002512   0.282877  -3.272683    985      0
+ 5.1533E+00   7.399781   0.255298 -34.745913   0.845462 -10.913862   0.000000   0.284306   0.004546   0.009930   0.037353      5
+ 8.2187E+05   1.649411   2.006806  -0.826260  -6.380549  -9.028083   0.000000   0.000019   0.000969   0.010209  0.000E+00  max increase
+
+  2      18   7.133705   5951.535  -0.197736  -0.197736   1.000000   1.000000   0.706631   0.000769   0.282858  -1.711163    803      0
+slurmstepd: error: *** JOB 18750117 ON cdr1505 CANCELLED AT 2023-11-18T15:48:02 ***

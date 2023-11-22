@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --job-name single_5M
+#SBATCH --time=24:00:00
+#SBATCH --cpus-per-task=12
+#SBATCH --ntasks=1
+#SBATCH --mem=16000M
+#SBATCH --account=$SLURM_ACCOUNT
+
+set -x # enables debugging
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK # tell code how many cores
+
+./rn > log.out 
+
+scontrol show job=$SLURM_JOB_ID # print out report
+

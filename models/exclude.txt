@@ -1,0 +1,14 @@
+
+*.data
+*.datasa
+*.mod
+*.index
+*.hdf5
+*.o
+*.out
+log*
+photos1
+photos2
+photos
+binary
+star
