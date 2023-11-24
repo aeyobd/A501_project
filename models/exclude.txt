@@ -1,14 +1,17 @@
 
 *.data
 *.datasa
-*.mod
 *.index
+*.mod
 *.hdf5
 *.o
 *.out
 log*
-photos1
-photos2
-photos
+
 binary
 star
+
+LOGS*
+photos*
+
+.mesa_temp_cache

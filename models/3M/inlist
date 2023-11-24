@@ -1,13 +1,8 @@
 &star_job
 
 ! basic controls
-    create_pre_main_sequence_model = .true.
-
-    change_net = .true.      
-    new_net_name = 'sagb_NeNa_MgAl.net'
-    adjust_abundances_for_new_isos = .true.
-
-
+    read_extra_star_job_inlist(1) = .true.
+    extra_star_job_inlist_name(1) = "../inlist_common"
 / ! end of star_job namelist
 
 
@@ -18,18 +13,10 @@
 
 
 &kap
-    Zbase = 0.01 ! metallicity for kappa
-    use_Type2_opacities = .true.
+    read_extra_kap_inlist(1) = .true.
+    extra_kap_inlist_name(1) = '../inlist_common'
 
 / !end of kap namelist
-
-
-&atm
-! simple atmosphere
-    atm_option = 'T_tau'
-    atm_T_tau_relation = 'Eddington'
-    atm_T_tau_opacity = 'fixed'
-/ ! end of atm namelist
 
 
 
@@ -37,45 +24,10 @@
 
 ! initial controls
     initial_mass = 3.000
-    initial_z = 0.01
+    Blocker_scaling_factor = 0.08d0
 
-    energy_eqn_option = 'dedt'
-    varcontrol_target = 5d-4
-    use_gold2_tolerances = .true.
-
-
-! output
-    photo_interval = 50                                                    
-    profile_interval = 10                                              
-    history_interval = 1                                                  
-    terminal_interval = 10                                                 
-    write_header_frequency = 10                                            
-
-    max_num_profile_models = 1000
-
-
-! mass loss       
-    cool_wind_RGB_scheme = 'Reimers' 
-    Reimers_scaling_factor = 0.5 
-    cool_wind_AGB_scheme = 'Blocker' 
-    Blocker_scaling_factor = 0.01  ! could be as los as 0.0003
-    RGB_to_AGB_wind_switch = 1d-4
-    cool_wind_full_on_T = 9.99d9
-    hot_wind_full_on_T = 1d10
-
-
-
-! convection and overshooting
-    mixing_length_alpha = 1.73
-
-    overshoot_scheme(1) = 'exponential'
-    overshoot_zone_type(1) = 'any'
-    overshoot_zone_loc(1) = 'any'
-    overshoot_bdy_loc(1) = 'any'
-    overshoot_f(1) = 0.014
-    overshoot_f0(1) = 0.004
-
-
+    read_extra_controls_inlist(1) = .true.
+    extra_controls_inlist_name(1) = '../inlist_common'
 / ! end of controls namelist
 
 

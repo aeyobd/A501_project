@@ -3,8 +3,7 @@
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 
 
-./clear_logs
-./star
+../star/star inlist
 
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 

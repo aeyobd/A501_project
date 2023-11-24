@@ -1,0 +1,11 @@
+      runtime_minutes: ******
+      model_number:        40257
+      star_age:     1.0397721871547726E+09
+      num_retries:          125
+      log_rel_run_E_err:        -2.7672606400886481
+      steps:        40631
+      retries:          127
+      redos:            0
+      solver_calls_made:        40758
+      solver_calls_failed:          127
+      solver_iterations:       296317

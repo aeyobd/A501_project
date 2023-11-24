@@ -1,0 +1,10 @@
+#!/bin/bash
+
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+
+../binary/binary
+
+
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+
+echo 'finished'

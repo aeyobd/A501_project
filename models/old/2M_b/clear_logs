@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+rm LOGS/*
+rm photos/*
+# rm slurm-*.out

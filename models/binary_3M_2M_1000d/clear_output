@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -f LOGS1/*
+rm -f LOGS2/*
+rm -f photos/*
+rm -f photos1/*
+rm -f photos2/*
