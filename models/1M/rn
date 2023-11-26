@@ -1,11 +1,14 @@
 #!/bin/bash
 
-date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 
+../clear_logs
+if [ ! -e 'start.mod' ] 
+then
+	echo making prems model
+	../star/star inlist_prems
+fi
 
 ../star/star inlist
-
-date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 
 echo 'finished'
 

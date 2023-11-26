@@ -1,0 +1,24 @@
+#!/bin/bash
+
+JOB_NAME="$(pwd | xargs basename)"
+sbatch <<EOT
+#!/bin/bash
+#SBATCH --job-name=$JOB_NAME
+#SBATCH --time=48:00:00
+#SBATCH --cpus-per-task=16
+#SBATCH --ntasks=1
+#SBATCH --mem=16000M
+#SBATCH --account=$SLURM_ACCOUNT
+
+set -x # enables debugging
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+./clear_output
+./rn > log.out
+
+scontrol show job $SLURM_JOB_ID # print out report
+
+EOT
+
+echo submitted $JOB_NAME

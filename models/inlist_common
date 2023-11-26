@@ -1,7 +1,6 @@
 &star_job
 
 ! basic controls
-    create_pre_main_sequence_model = .true.
 
     change_net = .true.      
     new_net_name = 'sagb_NeNa_MgAl.net'
