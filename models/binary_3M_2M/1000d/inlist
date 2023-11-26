@@ -1,7 +1,7 @@
 &binary_job
 
-   inlist_names(1) = '../3M/inlist' 
-   inlist_names(2) = '../2M/inlist'
+   inlist_names(1) = '../inlist_3M'
+   inlist_names(2) = '../inlist_2M'
    evolve_both_stars = .true.
 
 / ! end of binary_job namelist
@@ -14,9 +14,11 @@
     m1 = 3.0d0  ! donor mass in Msun
     m2 = 2.0d0 ! companion mass in Msun
 
+    initial_period_in_days = 1000.0d0
+
     limit_retention_by_mdot_edd = .false.
 
-! mass transfer
+    ! mass transfer
     mdot_scheme = 'Kolb'
     mass_transfer_alpha = 0.1d0
     mass_transfer_beta = 0.1d0

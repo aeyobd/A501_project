@@ -3,5 +3,6 @@
 
 rm LOGS/*
 rm photos/*
-rm slurm-*.out
 rm log.out
+
+rm slurm*.out

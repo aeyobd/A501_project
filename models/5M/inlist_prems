@@ -1,0 +1,36 @@
+&star_job
+    read_extra_star_job_inlist(1) = .true.
+    extra_star_job_inlist_name(1) = "../inlist_common"
+
+    create_pre_main_sequence_model = .true.
+    save_model_when_terminate = .true.
+    save_model_filename = 'start.mod'
+      
+/
+
+
+
+&eos
+/
+
+
+
+&kap
+    read_extra_kap_inlist(1) = .true.
+    extra_kap_inlist_name(1) = '../inlist_common'
+
+/
+
+
+
+&controls
+    read_extra_controls_inlist(1) = .true.
+    extra_controls_inlist_name(1) = '../inlist_common'
+
+    initial_mass = 5.0d0
+
+
+    log_L_lower_limit = 1
+    max_age = 0.5d0
+
+/ 

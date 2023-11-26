@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+../clear_logs
 if [ ! -e 'start.mod' ] 
 then
 	echo making prems model

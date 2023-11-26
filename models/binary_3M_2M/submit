@@ -1,6 +1,9 @@
 #!/bin/bash
 
-JOB_NAME="$(pwd | xargs basename)"
+cd "$1"
+
+JOB_NAME="3M_1M_$1"
+
 sbatch <<EOT
 #!/bin/bash
 #SBATCH --job-name=$JOB_NAME
@@ -12,13 +15,14 @@ sbatch <<EOT
 
 set -x # enables debugging
 
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export OMP_NUM_THREADS=\$SLURM_CPUS_PER_TASK
 
-./clear_output
 ./rn > log.out
 
-scontrol show job $SLURM_JOB_ID # print out report
+scontrol show job \$SLURM_JOB_ID # print out report
 
 EOT
 
-echo submitted $JOB_NAME
+echo running $JOB_NAME
+
+cd ..
