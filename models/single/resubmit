@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+cd "$1"
+
+JOB_NAME=$(basename "$1")
+
+sbatch <<EOT
+#!/bin/bash
+#SBATCH --job-name=${JOB_NAME}_re
+#SBATCH --time=48:00:00
+#SBATCH --cpus-per-task=12
+#SBATCH --ntasks=1
+#SBATCH --mem=12000M
+#SBATCH --account=$SLURM_ACCOUNT
+
+set -x # enables debugging
+
+export OMP_NUM_THREADS=\$SLURM_CPUS_PER_TASK
+
+echo restarting >> log.out
+./re >> log.out
+
+scontrol show job \$SLURM_JOB_ID # print out report
+
+EOT
+
+echo running  $JOB_NAME
+
+cd ..

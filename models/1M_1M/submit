@@ -1,0 +1,30 @@
+#!/bin/bash
+
+BINARY_NAME=$(pwd | xargs basename)
+
+cd "$1"
+
+JOB_NAME="${BINARY_NAME}_$1"
+
+sbatch <<EOT
+#!/bin/bash
+#SBATCH --job-name=$JOB_NAME
+#SBATCH --time=48:00:00
+#SBATCH --cpus-per-task=16
+#SBATCH --ntasks=1
+#SBATCH --mem=16000M
+#SBATCH --account=$SLURM_ACCOUNT
+
+set -x # enables debugging
+
+export OMP_NUM_THREADS=\$SLURM_CPUS_PER_TASK
+
+./rn > log.out
+
+scontrol show job \$SLURM_JOB_ID # print out report
+
+EOT
+
+echo running $JOB_NAME
+
+cd ..

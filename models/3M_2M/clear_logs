@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+rm -rf LOGS1
+rm -rf LOGS2
+rm -rf photos1
+rm -rf photos2
+rm slurm-*.out
+rm log.out

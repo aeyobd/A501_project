@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+echo starting model
+
+../../src_star/star inlist
+
+echo finished
+

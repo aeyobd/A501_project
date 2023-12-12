@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+if [ ! -e 'start.mod' ] 
+then
+	echo making prems model
+	../../src_star/star inlist_prems
+	echo finished prems
+fi
+
+echo starting model
+
+../../src_star/star inlist
+
+echo finished
+

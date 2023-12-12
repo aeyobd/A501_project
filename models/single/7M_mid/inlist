@@ -1,0 +1,113 @@
+&star_job
+
+! basic controls
+
+    create_pre_main_sequence_model = .true.
+
+    initial_zfracs = 6 ! asplund et al. (2009) composition
+    change_net = .true.      
+    new_net_name = 'agb.net'
+    adjust_abundances_for_new_isos = .true.
+
+    ! evolve a velocity variable
+    change_D_omega_flag = .true.
+    new_D_omega_flag = .true.
+
+/ ! end of star_job namelist
+
+
+
+&eos
+
+/ ! end eos
+
+
+&kap
+    Zbase = 0.01 ! metallicity for kappa
+    use_Type2_opacities = .true.
+    ! use asplund et al. (2009) abundances here too
+    kap_file_prefix = 'a09'
+    kap_lowT_prefix = 'lowT_fa05_a09p'
+    kap_CO_prefix = 'a09_co'
+
+/ !end of kap namelist
+
+
+
+&controls
+
+! initial controls
+    initial_mass = 7.00
+    initial_z = 0.01
+
+! timestepping/tolerances
+    energy_eqn_option = 'dedt'
+    varcontrol_target = 1d-3
+    ! use_gold2_tolerances = .true.
+    ! max_abs_rel_run_E_err = 1d-2
+
+    ! convergence_ignore_equL_residuals = .true.
+    ! delta_lgL_He_limit = 0.01
+
+
+
+! output
+    photo_interval = 100                                                    
+    profile_interval = 100                                                 
+    max_num_profile_models = 200
+    history_interval = 1                                                  
+    terminal_interval = 10                                                 
+    write_header_frequency = 10                                            
+
+    num_trace_history_values = 2
+    trace_history_value_name(1) = 'rel_E_err'
+    trace_history_value_name(2) = 'log_rel_run_E_err'
+
+
+! mass loss       
+    ! only use cool wind
+    cool_wind_full_on_T = 9.99d9
+    hot_wind_full_on_T = 1d10
+
+    cool_wind_RGB_scheme = 'Reimers' 
+    Reimers_scaling_factor = 0.5
+
+    RGB_to_AGB_wind_switch = 1d-4
+
+    cool_wind_AGB_scheme = 'Blocker' 
+    Blocker_scaling_factor = 0.011
+
+
+! angular momentum diffusion/mixing
+    am_nu_visc_factor = 0 
+
+    ! diffusion mixing coefficient according to Heger et al 2000
+    am_D_mix_factor = 0.0333333333333333 
+
+    ! values of 1 give normal strength for rotationally induced diffusion
+        D_DSI_factor = 0 ! dynamic shear instability 
+        D_SH_factor = 1 ! solberg-hoiland
+        D_SSI_factor = 1 ! secular shear instability
+        D_ES_factor = 1 ! eddington-sweet circulation
+        D_GSF_factor = 1 ! goldreich-shubert-fricke
+        D_ST_factor = 1 ! spruit-tayler dynamo
+
+
+! overshooting and convection
+    mixing_length_alpha = 1.73
+    use_Ledoux_criterion = .true.
+    alpha_semiconvection = 0.01
+
+    overshoot_mass_full_on = 1.8
+    overshoot_mass_full_off = 1.1
+
+    overshoot_scheme(1) = 'exponential'
+    overshoot_zone_type(1) = 'any'
+    overshoot_zone_loc(1) = 'any'
+    overshoot_bdy_loc(1) = 'any'
+    overshoot_f(1) = 0.014
+    overshoot_f0(1) = 0.004
+
+/ ! end of controls namelist
+
+

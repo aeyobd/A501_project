@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+rm -rf LOGS.bak
+rm -rf photos.bak
+rm -rf log.out.bak
+
+mv LOGS LOGS.bak
+mv photos photos.bak
+mv log.out log.out.bak
+
+rm slurm*.out

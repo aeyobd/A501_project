@@ -6,12 +6,15 @@
 *.hdf5
 *.o
 *.out
+*.bak
 log*
 
-binary
-star
+src/binary/binary
+src/star/star
 
 LOGS*
 photos*
 
 .mesa_temp_cache
+
+testhub.yml

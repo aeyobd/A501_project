@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+../../src_binary/binary inlist
+
+echo 'finished'

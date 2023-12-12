@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo fixing LOGS permissions
+find . -name LOGS* -type d -exec chmod 1777 {} \;
+
+echo removing old history.datasa files
+find . -name 'history.data' -type f -exec  sh -c '[ -f "{}sa" ] && [ "{}" -nt "{}sa" ] && echo "{}sa" && rm -f "{}sa"' \;
+
 echo syncing
 rsync -rv . ~/project/A501_project/models --exclude-from 'exclude.txt' --delete
 

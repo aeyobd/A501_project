@@ -1,6 +1,0 @@
-#!/bin/bash
-
-
-../../binary/binary inlist
-
-echo 'finished'
